@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "FocusPlay",
+    "version": "1.0",
+    "description": "FocusPlay intelligently manages your video playback as you switch between Chrome and your development environment. Say goodbye to distractions and hello to enhanced productivity. Perfect for developers, multitaskers, and anyone who values a seamless workflow.",
+    "icons": {
+        "48": "focus.png"
+    },
+    "permissions": [
+        "tabs",
+        "scripting",
+        "idle",
+        "activeTab",
+        "windows",
+         "scripting",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
